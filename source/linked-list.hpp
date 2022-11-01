@@ -12,7 +12,7 @@ typedef enum {
 
 /// Contains all information about element
 struct Node {
-    int data = 0;                  ///< element value
+    int data = 0;                   ///< element value
     Node *next = nullptr;           ///< next element pointer
     Node *prev = nullptr;           ///< previous element pointer
 };
@@ -68,3 +68,11 @@ int dump(Node *list, FILE *output);
  * \return Pointer to the element
 */
 Node *get_node(Node *list, int index);
+
+
+/**
+ * \brief Gets list size
+ * \param [out] list Allocated list
+ * \return List size
+*/
+int get_size(Node *list);

@@ -81,3 +81,12 @@ Node *get_node(Node *list, int index) {
 
     return list;
 }
+
+
+int get_size(Node *list) {
+    int size = 0;
+    
+    for(; list; list = list -> next, size++);
+
+    return size;
+}
